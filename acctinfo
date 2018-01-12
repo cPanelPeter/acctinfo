@@ -5,6 +5,16 @@
 # AUTHOR: Peter Elsner <peter.elsner@cpanel.net>                                      #
 #######################################################################################
 
+print <<EOF;
+
+#############################################################
+#### MOVED TO https://github.com/CpanelInc/tech-acctinfo ####
+#############################################################
+
+EOF
+
+exit;
+
 BEGIN {
     unshift @INC, '/usr/local/cpanel';
     unshift @INC, '/usr/local/cpanel/scripts';
@@ -1988,7 +1998,7 @@ sub check_file_existance {
         #                last;
         #            }
         #        }
-        $FoundLine = qx[ grep '$TheSearchString' $TheFile ];
+        $FoundLine = qx[ grep -w '$TheSearchString' $TheFile ];
         if   ($FoundLine) { return 1; }
         else              { return 0; }
     }

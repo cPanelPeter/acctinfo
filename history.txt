@@ -1,3 +1,8 @@
+
+#############################################################
+#### MOVED TO https://github.com/CpanelInc/tech-acctinfo ####
+#############################################################
+
 V2.4.82- Fix cruft check. Was not finding domains in /etc/named.conf and httpd.conf files
     - Thanks Rex
 V2.4.82- Add check for reserved usernames
